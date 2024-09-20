@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+void swap(string *a, string *b){
+string x = *a;
+*a = *b;
+*b = x;
+}
+int main(){
+string x = "Hello", y = "how are you";
+swap(&x,&y);
+cout<<"Value x = "<<x<<" "<<"y = "<<y<<endl;
+return 0;
+}
